@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - MB Bank</title>
+    <link rel="stylesheet" href="sign_up.css">
+</head>
+<body>
+    <form id="signUpForm" class="sign_up_container">
+        <div class="bank-icon">
+            <img src="assets/BankIcon.png" alt="BankIcon">
+        </div>
+        <span class="welcome-title">Create Account</span>
+
+        <div class="input-field">
+            <span>First Name:</span>
+            <div class="input-wrapper">
+                <input type="text" name="firstName" placeholder="Enter your first name" required>
+            </div>
+        </div>
+
+        <div class="input-field">
+            <span>Last Name:</span>
+            <div class="input-wrapper">
+                <input type="text" name="lastName" placeholder="Enter your last name" required>
+            </div>
+        </div>
+
+        <div class="input-field">
+            <span>Email:</span>
+            <div class="input-wrapper">
+                <input type="email" name="email" placeholder="Enter your email" required>
+            </div>
+        </div>
+
+        <div class="input-field">
+            <span>Password:</span>
+            <div class="input-wrapper">
+                <input type="password" name="password" placeholder="Enter your password" required>
+            </div>
+        </div>
+
+        <div class="input-field">
+            <span>Phone Number:</span>
+            <div class="input-wrapper">
+                <input type="text" name="phoneNumber" placeholder="Enter your phone number" required>
+            </div>
+        </div>
+
+        <div class="input-field">
+            <span>Date of Birth:</span>
+            <div class="input-wrapper">
+                <input type="date" name="dateOfBirth" required>
+            </div>
+        </div>
+
+        <button class="sign-up-btn" type="submit">Create Account</button>
+
+        <span class="login-link">Already have an account? <a href="log_in.html">Log In</a></span>
+    </form>
+
+    <script src="js/sign_up.js"></script>
+</body>
+</html>

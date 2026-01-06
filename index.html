@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MB Bank</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="my-bank-app-logo">
+                <img src="assets/MyBankAppLogo-removebg-preview.png" alt="MyBankAppLogo">
+                <a href="#">MB Bank</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="soon.html">Accounts</a></li>
+                    <li><a href="soon.html">Cards</a></li>
+                    <li><a href="soon.html">Transactions</a></li>
+                    <li><a href="soon.html">Profile</a></li>
+                </ul>
+            </nav>
+            <div class="right-profile">
+                <div class="client-profile">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="currentColor">
+                        <circle cx="32" cy="20" r="12"/>
+                        <path d="M16 52c0-8 16-12 16-12s16 4 16 12v4H16v-4z"/>
+                    </svg>
+                </div>
+                <span class="view-more"><a href="soon.html" style="text-decoration: none; color: #82b8ff;">View More</a></span>
+                <span class="client-name" id="client-name">Denys</span>
+            </div>
+        </header>
+
+        <main>
+            <div class="top-title-greetings">
+                <span id="welcome" class="greetings">Welcome back, Denys!</span>
+                <span class="title-info">Here's an overview of your accounts and cards.</span>
+            </div>
+
+            <div class="cards-top-wrapper">
+                <div class="accounts-info">
+                    <div class="total-balance-of-account">
+                        <span class="total-balance">Total Balance</span>
+                        <span class="balance" id="total-balance">$0.00</span>
+                        <div class="operations">
+                            <div class="deposit">
+                                <a href="deposit.html">Deposit</a>
+                            </div>
+                            <div class="withdraw">
+                                <a href="withdraw.html">Withdraw<span>></span></a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="info-about-accout">
+                        <span class="my-account">My Savings Account</span>
+                        <span class="card-number">**** 12345</span>
+                        <span class="account-balance">Balance: <span id="account-balance" class="money">$0.00</span></span>
+                    
+                        <div class="view-details">
+                            <div class="view-details-button">
+                                <a href="soon.html">View Details <span>></span></a>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards-bottom-wrapper">
+                <div class="cards-cotainer">
+                    <span class="my-cards-title">My Cards</span>
+                    <span class="under-line"></span>
+                    <div class="my-card">
+                        <div class="left-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="19" y1="12" x2="5" y2="12"/>
+                                <polyline points="12 19 5 12 12 5"/>
+                            </svg>
+                        </div>
+                        <div class="card">
+                            <div class="card-logo">
+                                <img src="assets/MyBankAppLogo-removebg-preview.png" alt="">
+                                <span class="bank-name-card">MB Bank</span>
+                            </div>
+                            <div class="card-chip">
+                                <img src="assets/cardChip.png" alt="Card chip">
+                            </div>
+                            <div class="my-card-number">
+                                <span>•••••</span><span>5678</span>
+                            </div>
+                            <div class="cardholder-name">
+                                <span>Denys Alekseienko</span>
+                            </div>
+
+                            <div class="expiration-date-and-nfc">
+                                <span>10/30</span>
+                                <div class="nfc">
+                                    <svg height="70" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 12a10 10 0 0 1 10-10" stroke="white" stroke-width="2" fill="none"/>
+                                        <path d="M6 12a6 6 0 0 1 6-6" stroke="white" stroke-width="2" fill="none"/>
+                                        <path d="M10 12a2 2 0 0 1 2-2" stroke="white" stroke-width="2" fill="none"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="right-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                                <polyline points="12 5 19 12 12 19"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-transactions">
+                    <span class="my-recent-transactions">Recents Transactions</span>
+                    <span class="under-line"></span>
+
+                    <div class="transaction-list" id="transactions">
+                        
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
